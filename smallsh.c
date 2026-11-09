@@ -392,7 +392,7 @@ int procline(void) {
                     runcommand(arg, type);
                 }
                 if (toktype == EOL)
-                    return;
+                    return 0;
                 narg = 0;
                 break;
         }
